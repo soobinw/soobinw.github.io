@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Soobin Woo
+EMAIL: soobinw@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Soobin">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+   <!-- you would link to an external stylesheet here! -->
+   
+   <!-- you would also link to Bootstrap here! -->
+
+
+   <!--Google Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+   
+
+  <title>Soobin Woo</title>
+</head>
+
+<body>
+
+  <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">/home</a>
+        <a class="nav-item nav-link" href="about.html">/about</a>
+        <a class="nav-item nav-link" href="projects.html">/projects</a>
+        <a class="nav-item nav-link" href="contact.html">/say hi</a>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="contact">
+
+    <h3> &lt;Let's Connect!&gt;</h3>
+    <br>
+    <a class="contact-link" href="mailto:soobinw@uci.edu">Email</a>
+    <br>
+    <!-- https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/ -->
+    <a class="contact-link" href="https://github.com/soobinw" target="_blank" rel="noopener noreferrer" >Github</a>
+    <br>
+    <a class="contact-link" href="https://www.linkedin.com/in/soobin-woo-143932190/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+
+    </div>
+      
+
+
+    <div class="fixed-bottom">
+        <footer>
+          <audio id="my-audio" controls="controls" src="palette.mp3" autoplay loop>
+            Your browser does not support this audio tag.
+          </audio>
+        </footer>
+      </div>
+      <!-- https://stackoverflow.com/questions/33747398/html-audio-tag-volume -->
+      <script>
+        var audio = document.getElementById("my-audio");
+        audio.volume = 0.07;
+      </script>
+  
+
+
+</body>
+</html>
