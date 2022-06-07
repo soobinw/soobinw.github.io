@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #4b4a4a;
+  background-color: #ffffff;
+}
+
+#project-img {
+  width: 30%;
+}
+/*# sourceMappingURL=projects.css.map */
