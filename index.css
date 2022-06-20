@@ -9,8 +9,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
   width: 100%;
@@ -18,7 +16,10 @@ body {
 
 .left {
   width: 40%;
-  height: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #b3d3df;
 }
 
@@ -26,104 +27,27 @@ body {
   font-size: 175%;
   margin-top: 500px;
   padding: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .heading-blurb .wave {
-  -webkit-animation-name: wave-animation;
-          animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  /* Change to speed up or slow down */
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  /* Never stop waving :) */
-  -webkit-transform-origin: 70% 70%;
-          transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-
-@-webkit-keyframes wave-animation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
-  }
-  30% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  40% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  50% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  /* Reset for the last half to pause */
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
 }
 
 @keyframes wave-animation {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
-  }
-  30% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  40% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  50% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  /* Reset for the last half to pause */
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
 }
+
 
 .heading-blurb .heading-title {
   padding: 0;
@@ -132,22 +56,17 @@ body {
 
 .right {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.right #header {
-  bottom: 10%;
-  margin-left: 10%;
-  width: 80%;
+#header {
+  margin-left: 4%;
+  width: 70%;
+  height: auto;
 }
 
 a {
@@ -171,18 +90,14 @@ a:hover {
 }
 
 .navigate #about {
-  margin: 1%;
+  margin: 2%;
 }
 
 .navigate #projects {
-  margin: 1%;
-}
-
-.navigate #contact {
-  margin: 1%;
+  margin: 2%;
 }
 
 .navigate #resume {
-  margin: 1%;
+  margin: 2%;
 }
 /*# sourceMappingURL=index.css.map */

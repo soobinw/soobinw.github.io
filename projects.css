@@ -6,7 +6,29 @@ body {
   background-color: #ffffff;
 }
 
+.proj-header {
+  margin-left: 0.5%;
+  padding: 0.4em;
+}
+
+.header {
+  margin: 6% 10% 4%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+}
+
 #project-img {
-  width: 30%;
+  width: 35em;
+} 
+
+.proj-container {
+  margin: 15% 4% 5%;
+}
+
+.fixed-bottom {
+  padding: 0.5em;
 }
 /*# sourceMappingURL=projects.css.map */
