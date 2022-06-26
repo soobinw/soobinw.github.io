@@ -9,7 +9,7 @@ var typewriter = new Typewriter(type, {
 typewriter.typeString("nice to meet you!")
     .pauseFor(1500)
     .deleteAll()
-    .typeString("i am currently a cs major at uci.")
+    .typeString("i am a uci graduate w/a bs in comp sci.")
     .pauseFor(1500)
     .deleteAll()
     .typeString("enjoy your stay :-)")
