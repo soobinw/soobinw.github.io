@@ -24,7 +24,19 @@ body {
   width: 35em;
 } 
 
+.swiper {
+  width: 700px;
+}
+
+.proj-title{
+  color:#4b4a4a;
+  font-size: 50px;
+  font-weight: 30;
+}
+
 .proj-container {
+  display: flex;
+  flex-direction: ;
   margin: 15% 4% 5%;
 }
 

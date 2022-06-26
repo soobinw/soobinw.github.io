@@ -12,17 +12,24 @@ EMAIL: soobinw@uci.edu
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-   <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="projects.css">
    <!-- you would link to an external stylesheet here! -->
    
 
    <!--Google Fonts-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Varela+Round&display=swap" rel="stylesheet">
 
-   <script src="https://kit.fontawesome.com/c1dc817005.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c1dc817005.js" crossorigin="anonymous"></script>
+
+  <!--React-->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!--Swiper CSS Carousel-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <title>Soobin Woo</title>
 </head>
 
@@ -50,40 +57,69 @@ EMAIL: soobinw@uci.edu
     <div class="header">
       <img src="images/projects.png" id="project-img">
     </div>
+    <!-- <div id="root"></div> -->
 
-    <div class="proj-container">
-      <h2 class ="proj-title">Fabflix</h2>
-      <figure>
+    <!-- <div class="swiper mySwiper proj-container">
+      <div class="swiper-wrapper"></div>
 
-        <figcaption class = "proj-figcap">full-stack e-commerce movie web application that allows users to login, browse, and search movie info <br></strong>
-        <strong>&lt;HTML/CSS, Python, JavaScript, JQuery, AWS, Tomcat&gt;</strong></figcaption>
-      </figure>
+      <div class="swiper-slide">
+        <div class="project-content">
+          <span class="proj-title">Fabflix</span>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination">ß</div>
 
-      <!-- <h2 class ="proj-title">X Marks The Spot</h2>
-      <figure>
+    </div> -->
+    <div class="swiper mySwiper proj-container">
+      <div class="swiper-wrapper">
 
-        <figcaption class = "proj-figcap">flask-based web application that displays an interactive map with local markers <br>
-        <strong>&lt;HTML/CSS, Python, Javascript, Firebase, SQLite, Google Autocomplete API, Google Maps API&gt;</strong></figcaption>
-      </figure>
+        <div class="swiper-slide">
+          <h2 class ="proj-title">Fabflix</h2>
+          <figure>
+            <figcaption class = "proj-figcap">full-stack e-commerce movie web application that allows users to login, browse, and search movie info <br></strong>
+            <strong>&lt;HTML/CSS, Python, JavaScript, JQuery, AWS, Tomcat&gt;</strong></figcaption>
+          </figure>
+        </div>
+        
+        <div class="swiper-slide">
+          <h2 class ="proj-title">X Marks The Spot</h2>
+          <figure>
+            <figcaption class = "proj-figcap">flask-based web application that displays an interactive map with local markers <br>
+            <strong>&lt;HTML/CSS, Python, Javascript, Firebase, SQLite, Google Autocomplete API, Google Maps API&gt;</strong></figcaption>
+          </figure>
+        </div>
 
-      <h2 class ="proj-title">Search Engine</h2>
-      <figure>
-        <figcaption class = "proj-figcap">multi-threaded search engine for UCI's school of ICS web domains <br> implemented from scratch strengthening concepts in web crawling, indexing and
-          and retrieval of text documents <br><strong>&lt;Python, BeautifulSoup&gt;</strong></figcaption>
-      </figure>
+        <div class="swiper-slide">
+          <h2 class ="proj-title">Search Engine</h2>
+          <figure>
+            <figcaption class = "proj-figcap">multi-threaded search engine for UCI's school of ICS web domains <br> implemented from scratch strengthening concepts in web crawling, indexing and
+              and retrieval of text documents <br><strong>&lt;Python, BeautifulSoup&gt;</strong></figcaption>
+          </figure>
+        </div>
 
-      <h2 class ="proj-title">TrackEvry</h2>
-      <figure>
-        <figcaption class = "proj-figcap">to-do list web application that allows users to create/categorize multiple lists showcasing in-progress 
-          & completed tasks <br><strong>&lt;HTML/CSS, Python, Flask, Firebase&gt;</strong></figcaption>
-      </figure>
+        <div class="swiper-slide">
+          <h2 class ="proj-title">TrackEvry</h2>
+          <figure>
+            <figcaption class = "proj-figcap">to-do list web application that allows users to create/categorize multiple lists showcasing in-progress 
+              & completed tasks <br><strong>&lt;HTML/CSS, Python, Flask, Firebase&gt;</strong></figcaption>
+          </figure>
+        </div>
 
-      <h2 class ="proj-title">This Portfolio Website</h2>
-      <figure>
-        <figcaption class = "proj-figcap">Personal portfoilio to strengthen my front-end skills. All doodles are also made by me! <br><strong>&lt;HTML/CSS, Javascript, Procreate&gt;</strong></figcaption>
-      </figure> -->
-
+        <div class="swiper-slide">
+          <h2 class ="proj-title">This Portfolio Website</h2>
+          <figure>
+            <figcaption class = "proj-figcap">Personal portfoilio to strengthen my front-end skills. All doodles are also made by me! <br><strong>&lt;HTML/CSS, Javascript, Procreate&gt;</strong></figcaption>
+          </figure>
+        </div>
+  
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
+   
   </div>
 
 
@@ -93,7 +129,26 @@ EMAIL: soobinw@uci.edu
     </footer>
   </div>
 
-
+  <!--Swiper JS-->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 </html>
